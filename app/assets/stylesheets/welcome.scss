@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// yellow #E8AF00 232/175/0
+// light yellow #FFCC2D 255/204/45
+// light grey #F6F7F8
 
 .banner-mask{
     position: relative;;
@@ -10,7 +13,7 @@
     height: 768px;
     z-index: 2;
     top: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.57);
 }
 
 .banner-image{
@@ -19,4 +22,170 @@
   z-index: 1 ;
   width: 100%;
   height: 768px;
+}
+
+.banner-title{
+  color: white;
+  position:absolute;
+  top: 320px;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  h1{
+  font-size: 60px;
+  margin-bottom: 40px;
+ }
+}
+
+.banner-title .btn-default{
+  width: 200px;
+  height: 60px;
+  padding-top: 14px;
+  font-size: 20px;
+}
+
+.navbar-bg{
+  padding-top:20px;
+  border-color: transparent;
+  background-color: transparent;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  a{
+    color: white;
+  }
+}
+
+.navbar-nav{
+  a:hover{background-color: transparent !important;}
+}
+
+.btn-default{
+  background-color:#FFCC2D;
+  color: white;
+  border-color: transparent;
+  padding:7px 35px;
+  border-radius: 4px;
+
+}
+
+.section-services{
+  position: relative;;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  // min-height: 700px;
+  h2{
+    font-size:40px;
+    margin-bottom: 80px;
+  }
+}
+
+.fa-circle{
+  color: #FFCC2D;
+}
+
+.service-font{
+  margin-top: 20px;
+  h3{
+    font-size: 18px;
+  }
+  p{
+    padding-top: 8px;
+    font-size: 14px;
+  }
+}
+
+.announcement{
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color:#F6F7F8;
+  text-align: center;
+  h2{
+    font-size:40px;
+    margin-bottom: 50px;
+  }
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    li{
+    min-height: 150px;
+    margin-bottom: 100px;
+
+  }
+}
+
+
+
+@media (min-width: 992px){
+  .timeline-image {
+      width: 150px;
+      height: 150px;
+      margin-left: -75px;
+      left: 50%;
+  }
+  .timeline-panel {
+      width: 41%;
+      float: left;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+  }
+  .timeline-inverted .timeline-panel{
+      text-align: left;
+      float: right;
+      padding: 0 20px 20px 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+.timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .timeline-panel {
+      width: 41%;
+      float: left;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+  }
+  .timeline-inverted .timeline-panel{
+      text-align: left;
+      float: right;
+      padding: 0 20px 20px 20px;
+  }
+}
+
+@media (max-width:767px){
+.timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 20px;
+  }
+  .timeline-panel {
+      text-align: left;
+      float: left;
+      padding-left: 150px;
+  }
+}
+
+.timeline-image{
+  position: absolute;
+  z-index: 100;
+  background-color: #fed136;
+  color: #fff;
+  border-radius: 100%;
+  border: 7px solid #FFF;
+  text-align: center;
+}
+
+.img-responsive{
+  max-width: 100%;
 }
